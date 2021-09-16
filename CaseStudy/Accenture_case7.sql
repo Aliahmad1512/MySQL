@@ -1,4 +1,4 @@
-/*Accenture Casestudy 7*/
+/*Accenture Casestudy*/
 
 /*Creating a database*/
 create database Accenture;
