@@ -1,7 +1,9 @@
-/*Accenture Casestudy 7*/
+/*Accenture Casestudy*/
 
+/*Creating a database*/
 create database Accenture;
 
+/*Use accenture as a default database*/
 use accenture;
 
 select * from class;
@@ -23,10 +25,12 @@ select * from teacher_allocation;
 /*1. In the school one teacher might be teaching more than one class.
 Write a query to identify how many classes each teacher is taking*/
 
-/*select t.teacher_id, count(*) as NoOfClasses
+select t.teacher_id, count(*) as NoOfClasses
 from class c inner join teacher_allocation ta on c.class_id = ta.class_id
 inner join teacher t on t.teacher_id = ta.teacher_id
-group by teacher_id;*/ #
+group by teacher_id;
+
+/*Or*/
 
 select teacher_id, count(*) as NoOfClasses
 from teacher_allocation
@@ -99,32 +103,4 @@ group by c.class_id, s.student_id
 order by c.class_id, AssignedRanks;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#################################################################/*CASESTUDY*/##############################################################################
